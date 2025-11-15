@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Saori Dominguez</title>
+    <meta
+      name="description"
+      content="WDD 131 – Dynamic Web Fundamentals – Saori Dominguez – course landing page with links, an About Me section, and web development resources."
+    />
+    <meta name="author" content="Saori Dominguez" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures"
+          target="_blank"
+          rel="noopener"
+          >Scripture</a
+        >
+        <a href="final-project/">Final Project</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Saori Dominguez</h1>
+
+      <section class="card about">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <p>
+            My name is Saori (Sao). I’m studying web development and I enjoy learning how to build
+            useful and beautiful websites. I work, study, and try to improve a little bit every day.
+            This page will be my course landing page for WDD 131.
+          </p>
+          <img
+            src="images/profile.jpg"
+            alt="Portrait of Saori Dominguez"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+
+        <hr class="section-rule" aria-hidden="true" />
+
+        <h3>My Country – Mexico</h3>
+        <div class="locale">
+          <figure>
+            <img
+              src="images/mexico-flag.jpg"
+              alt="Flag of Mexico"
+              width="180"
+              height="120"
+              loading="lazy"
+            />
+            <figcaption>Flag of Mexico</figcaption>
+          </figure>
+          <p>
+            Mexico is known for its rich culture, food, traditions, and beautiful landscapes. From
+            its beaches and mountains to its historical cities, there is always something new to
+            explore and learn.
+          </p>
+        </div>
+      </section>
+
+      <section class="card resources">
+        <h2>Web Development Resources</h2>
+        <div class="resources-grid">
+          <img
+            src="images/code-snippet.jpg"
+            alt="Abstract code illustration"
+            width="300"
+            height="200"
+            loading="lazy"
+          />
+          <ul class="link-list">
+            <li>
+              <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
+                MDN Web Docs
+              </a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/" target="_blank" rel="noopener">
+                W3Schools
+              </a>
+            </li>
+            <li>
+              <a href="https://css-tricks.com/" target="_blank" rel="noopener">
+                CSS-Tricks
+              </a>
+            </li>
+            <li>
+              <a href="https://dev.to/" target="_blank" rel="noopener">
+                Dev.to Community
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/" target="_blank" rel="noopener">
+                CodePen
+              </a>
+            </li>
+            <li>
+              <a href="https://picsum.photos/" target="_blank" rel="noopener">
+                Lorem Picsum Images
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="currentyear"></span> Saori Dominguez • Mexico</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
