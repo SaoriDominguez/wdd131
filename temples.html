@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Temple Album – Saori Dominguez</title>
+    <meta
+      name="description"
+      content="Temple Album by Saori Dominguez for WDD 131 – responsive picture gallery of temples with filters and hamburger menu."
+    />
+    <meta name="author" content="Saori Dominguez" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS: mobile first + larger view -->
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link
+      rel="stylesheet"
+      href="styles/temples-large.css"
+      media="(min-width: 800px)"
+    />
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1>Temple Album</h1>
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          id="menu"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <nav class="nav-links" aria-label="Temple album navigation">
+          <a href="#" data-filter="home" class="active">Home</a>
+          <a href="#" data-filter="old">Old</a>
+          <a href="#" data-filter="new">New</a>
+          <a href="#" data-filter="large">Large</a>
+          <a href="#" data-filter="small">Small</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2 id="view-title">Home</h2>
+
+      <!-- JS insertará aquí las figuras -->
+      <section id="temple-grid" class="temple-grid"></section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="currentyear"></span> 🌸 Saori Dominguez 🌸 Mexico
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

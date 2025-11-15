@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.input-area {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: .5rem;
+}
+
+button {
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f0f8ff;
+  margin-bottom: .5rem;
+  padding: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.delete {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+/* Se aplica solo en pantallas >= 800px porque así se enlaza en el HTML */
+
+/* Ocultamos el botón hamburguesa en escritorio */
+#menu {
+  display: none;
+}
+
+/* Nav horizontal siempre visible */
+.nav-links {
+  position: static;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+.nav-links a {
+  padding: 0.25rem 0;
+}
+
+/* Main con más respiro arriba */
+main {
+  padding-top: 2rem;
+}
+
+/* Grid de 3 columnas */
+.temple-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+}
