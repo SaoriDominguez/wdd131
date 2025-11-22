@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mexico – Country Page</title>
+    <meta
+      name="description"
+      content="Country page for Mexico with basic data and weather information for WDD 131."
+    />
+    <meta name="author" content="Saori Dominguez" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1>Mexico</h1>
+    </header>
+
+    <main>
+      <!-- HERO IMAGE con srcset / WebP -->
+      <section class="hero">
+        <picture>
+          <source
+            srcset="images/mexico-hero-large.webp"
+            media="(min-width: 900px)"
+          />
+          <img
+            src="images/mexico-hero-small.webp"
+            alt="Scenic view of Mexico"
+            loading="lazy"
+          />
+        </picture>
+      </section>
+
+      <!-- PANEL DE DATA -->
+      <section class="panel data">
+        <h2>Data</h2>
+        <dl>
+          <div class="row">
+            <dt>Area:</dt>
+            <dd>1,964,375 sq km</dd>
+          </div>
+          <div class="row">
+            <dt>Population:</dt>
+            <dd>~128,000,000</dd>
+          </div>
+          <div class="row">
+            <dt>Capital:</dt>
+            <dd>Mexico City</dd>
+          </div>
+          <div class="row">
+            <dt>Languages:</dt>
+            <dd>Spanish, Indigenous Languages</dd>
+          </div>
+          <div class="row">
+            <dt>Currency:</dt>
+            <dd>Mexican Peso (MXN)</dd>
+          </div>
+          <div class="row">
+            <dt>Time Zone:</dt>
+            <dd>UTC−8 to UTC−5</dd>
+          </div>
+          <div class="row">
+            <dt>Calling Code:</dt>
+            <dd>+52</dd>
+          </div>
+          <div class="row">
+            <dt>Internet TLD:</dt>
+            <dd>.mx</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- PANEL DE WEATHER -->
+      <section class="panel weather">
+        <h2>Weather</h2>
+
+        <!-- SVG icon (mobile) -->
+        <img
+          class="weather-icon"
+          src="images/weather-sun-cloud.svg"
+          alt="Partly cloudy icon"
+          loading="lazy"
+        />
+
+        <dl>
+          <div class="row">
+            <dt>Temperature:</dt>
+            <dd><span id="temp"></span> °C</dd>
+          </div>
+          <div class="row">
+            <dt>Conditions:</dt>
+            <dd>Partly Cloudy</dd>
+          </div>
+          <div class="row">
+            <dt>Wind:</dt>
+            <dd><span id="windSpeed"></span> km/h</dd>
+          </div>
+          <div class="row">
+            <dt>Wind Chill:</dt>
+            <dd><span id="windChill"></span></dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="currentyear"></span> 🌸 Saori Dominguez 🌸 Mexico
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
