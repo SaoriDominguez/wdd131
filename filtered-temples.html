@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temple Album – Filtered</title>
+    <meta name="description" content="Filtered temple album with lazy loading and JavaScript filters for WDD 131.">
+    <meta name="author" content="Saori Dominguez">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+
+      <!-- botón hamburguesa -->
+      <button id="menu" aria-label="Toggle navigation menu">☰</button>
+
+      <nav class="navigation">
+        <a href="#" data-filter="home">Home</a>
+        <a href="#" data-filter="old">Old</a>
+        <a href="#" data-filter="new">New</a>
+        <a href="#" data-filter="large">Large</a>
+        <a href="#" data-filter="small">Small</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2 id="filterTitle">All Temples</h2>
+
+      <div id="templeCards" class="temple-grid">
+        <!-- JS injects <article> / <figure> here -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Saori Dominguez – Mexico</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

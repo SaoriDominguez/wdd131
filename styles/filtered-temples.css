@@ -1,0 +1,144 @@
+:root {
+  --bg: #0f172a;
+  --card-bg: #111827;
+  --accent: #f97316;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border-soft: #1f2937;
+  --radius-lg: 0.75rem;
+}
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header y nav */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background-color: #020617;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* mobile */
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.5rem;
+  color: var(--text-main);
+  padding: 0.3rem 0.6rem;
+}
+
+/* Nav */
+.navigation {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* .open desde JS */
+.navigation.open {
+  display: flex;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--text-main);
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background-color: var(--accent);
+  color: #020617;
+}
+
+/* Main */
+main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 1rem auto 2rem;
+  padding: 0 1rem;
+}
+
+#filterTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Grid de temples */
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+/* Tarjeta individual */
+.temple-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.temple-card img {
+  width: 100%;
+  display: block;
+  height: 220px;
+  object-fit: cover;
+}
+
+.temple-card-content {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.temple-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+}
+
+.temple-card p {
+  margin: 0.15rem 0;
+  font-size: 0.9rem;
+}
+
+.temple-card p span.label {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  background-color: #020617;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
