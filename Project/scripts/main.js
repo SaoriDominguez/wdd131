@@ -34,7 +34,8 @@ const activities = [
     scripture: "3 Nephi 17:21–23",
     summary:
       "Simple circle time with a song, a soft toy hug, and a picture of Jesus surrounded by children.",
-    image: "images/nursery-circle.webp",
+    // aquí solo cambiamos el nombre del archivo de imagen
+    image: "images/jesus-loves-me-circle-time.webp",
     tags: ["song", "reverent", "short"]
   },
   {
@@ -47,7 +48,8 @@ const activities = [
     scripture: "Ephesians 6:11",
     summary:
       "Use paper or felt pieces to represent the armor of God and let the children build it while they learn each part.",
-    image: "images/armor-of-god.webp",
+    // aquí también solo cambiamos el archivo
+    image: "images/armor-of-god-dressup.webp",
     tags: ["movement", "scripture", "visual"]
   },
   {
@@ -60,6 +62,7 @@ const activities = [
     scripture: "Alma 32:27",
     summary:
       "Children write something they know about Jesus on paper leaves and add them to a poster or paper tree.",
+    // este puede quedarse igual si tu archivo se llama así
     image: "images/testimony-tree.webp",
     tags: ["family", "craft", "faith"]
   },

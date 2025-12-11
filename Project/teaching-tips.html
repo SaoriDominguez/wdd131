@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +9,13 @@
   <meta name="description" content="Simple teaching tips, games, and spiritual helps for Primary children." />
   <meta name="author" content="Saori Domínguez" />
 
-  <!-- 1) estilos generales del sitio -->
+  <!-- Google fonts como en las otras páginas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- estilos generales y específicos -->
   <link rel="stylesheet" href="styles/main.css" />
-  <!-- 2) estilos específicos del proyecto / teaching tips -->
   <link rel="stylesheet" href="styles/project.css" />
 </head>
 
@@ -31,7 +36,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="activities.html">Activities</a></li>
           <li><a href="teaching-tips.html" class="active">Teaching Tips</a></li>
-          <li><a href="#share">Share an Idea</a></li>
+          <li><a href="index.html#share">Share an Idea</a></li>
           <li><a href="references.html">References</a></li>
         </ul>
       </nav>
@@ -78,23 +83,28 @@
         </aside>
 
         <!-- Panel de detalle con imagen -->
-        <article class="tips-detail">
-          <h3 id="tip-title">Teaching Children to Pray</h3>
+  <article class="tips-detail">
+  <h3 id="tip-title">Teaching Children to Pray</h3>
 
-          <figure class="tip-figure">
-            <img
-              id="tip-image"
-              src="images/tip-prayer.jpg"
-              alt="Parent and child kneeling in prayer"
-              loading="lazy"
-            />
-          </figure>
+  <!-- TEXTO PRIMERO -->
+  <p id="tip-body">
+    Show children how to pray by using simple steps: address Heavenly Father,
+    express gratitude, ask for help, and close in Jesus Christ’s name.
+    Practice together with short, joyful examples. Invite children to choose
+    one sentence to say on their own, building confidence and trust.
+  </p>
 
-          <p id="tip-body">
-            Show children how to pray by using simple steps: address Heavenly Father, express gratitude,
-            ask for help, and close in Jesus Christ’s name. Practice together with short, joyful examples.
-            Invite children to choose one sentence to say on their own, building confidence and trust.
-          </p>
+  <!-- IMAGEN DESPUÉS DEL TEXTO -->
+  <figure class="tip-figure">
+    <img
+      id="tip-image"
+      src="images/tip-prayer.jpg"
+      alt="Parent and child kneeling in prayer"
+      loading="lazy"
+    />
+  </figure>
+</article>
+
         </article>
       </div>
     </section>
@@ -106,9 +116,11 @@
       &copy; <span id="current-year"></span> The Primary Treehouse &bull;
       Created by Saori Domínguez
     </p>
-    <p>Last Updated: <span id="last-modified"></span></p>
+    <p>Last Updated: <span id="last-modified"></span> · <a href="references.html">References</a></p>
   </footer>
 
+  <!-- primero el JS general (nav, footer, etc.), luego el específico -->
+  <script src="scripts/main.js" defer></script>
   <script src="scripts/project.js" defer></script>
 </body>
 </html>
