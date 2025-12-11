@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Primary Treehouse – Home</title>
+  <meta name="description" content="Centro de ideas para la Primaria: actividades, noches de hogar y servicio para niños.">
+  <meta name="author" content="Saori Dominguez">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+<div class="site-wrapper">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo-circle">🌳</div>
+        <div class="brand-text">
+          <h1>The Primary Treehouse</h1>
+          <p class="tagline">Tiny hands. True disciples.</p>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="teaching-tips.html">Teaching Tips</a></li>
+          <li><a href="#share">Share an Idea</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="section">
+      <div class="card hero">
+        <div class="hero-text">
+          <h2>A Safe Haven for Growing Testimonies</h2>
+          <p>
+            Quick and reverent ideas to help Primary children learn about Jesus Christ
+            at home and in the chapel.
+          </p>
+          <div class="hero-badges">
+            <span class="badge">Nursery</span>
+            <span class="badge">CTR</span>
+            <span class="badge">Valiant</span>
+            <span class="badge">FHE</span>
+            <span class="badge">Service</span>
+          </div>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="activities.html">Browse Activities</a>
+            <a class="btn btn-outline" href="teaching-tips.html">See Teaching Tips</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- esta puedes hacerla webp y optimizarla -->
+          <img src="images/treehouse-hero.webp" alt="Casita del árbol para la Primaria">
+        </div>
+      </div>
+    </section>
+
+    <!-- AGE CARDS -->
+    <section class="section">
+      <h2>Choose Your Children's Age</h2>
+      <div class="age-grid">
+        <article class="age-card">
+          <h3>Nursery (18–36 months)</h3>
+          <p>Short, visual, and loving activities for the littlest ones.</p>
+          <a href="activities.html#nursery">See Nursery Ideas →</a>
+        </article>
+        <article class="age-card">
+          <h3>CTR (4–7 years)</h3>
+          <p>Reverent games, crafts, and activities for curious and energetic children.</p>
+          <a href="activities.html#ctr">See CTR Ideas →</a>
+        </article>
+        <article class="age-card">
+          <h3>Valiant (8–11 years)</h3>
+          <p>Activities that invite thinking, writing, and acting like true disciples.</p>
+          <a href="activities.html#valiant">See Valiant Ideas →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURED ACTIVITIES -->
+    <section class="section">
+      <h2>Featured Ideas This Week</h2>
+      <p class="muted">A quick sample. You can see the full library in the Activities tab.</p>
+      <div id="featured-activities" class="activity-grid">
+        <!-- se llena desde JS -->
+      </div>
+    </section>
+
+    <!-- SHARE FORM -->
+    <section class="section" id="share">
+      <h2>Share an Idea</h2>
+      <div class="card form-card">
+        <p>
+          Do you have an activity that worked really well with your children? Write it here to
+          save it and be able to share it with your presidency or companions.
+        </p>
+        <form id="share-form" novalidate>
+          <div class="form-row">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <p class="form-help">It is only used to fill in the fields on this same device.</p>
+          </div>
+
+          <div class="form-row">
+            <label for="age-group">Age Group</label>
+            <select id="age-group" name="age-group">
+              <option value="Nursery">Nursery</option>
+              <option value="CTR">CTR</option>
+              <option value="Valiant">Valiant</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="idea-title">Idea Title *</label>
+            <input type="text" id="idea-title" name="idea-title" required>
+          </div>
+
+          <div class="form-row">
+            <label for="details">Details *</label>
+            <textarea id="details" name="details" required></textarea>
+            <p class="form-help">
+              Include materials, duration, and how it helped invite the Spirit.
+            </p>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Save Idea Locally</button>
+          <div id="share-message" class="form-message"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> The Primary Treehouse · Saori Dominguez · Mexico</p>
+    <p>Last modified: <span id="last-modified"></span> · <a href="references.html">References</a></p>
+  </footer>
+</div>
+</body>
+</html>

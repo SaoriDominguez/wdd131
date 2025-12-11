@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching Tips – The Primary Treehouse</title>
+
+  <meta name="description" content="Simple teaching tips, games, and spiritual helps for Primary children." />
+  <meta name="author" content="Saori Domínguez" />
+
+  <!-- 1) estilos generales del sitio -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- 2) estilos específicos del proyecto / teaching tips -->
+  <link rel="stylesheet" href="styles/project.css" />
+</head>
+
+<body>
+  <!-- Header igual que en index, solo cambiando el enlace activo -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo-circle">🌳</div>
+        <div class="brand-text">
+          <h1>The Primary Treehouse</h1>
+          <p class="tagline">Tiny hands. True disciples.</p>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="teaching-tips.html" class="active">Teaching Tips</a></li>
+          <li><a href="#share">Share an Idea</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-intro">
+      <h2>Tips &amp; Tricks Treasury</h2>
+      <p class="page-subtitle">
+        A treasury of simple teaching ideas, games, and spiritual helps for Primary children.
+      </p>
+      <p class="page-scripture">
+        “And he took their little children, one by one, and blessed them, and he prayed unto the Father for them.”
+        <span class="scripture-ref">— 3 Nephi 17:21</span>
+      </p>
+    </section>
+
+    <section class="tips-wrapper">
+      <div class="tips-grid">
+        <!-- Lista de capítulos -->
+        <aside class="tips-list">
+          <button class="tips-item active" data-tip="pray">
+            Teaching Children to Pray
+          </button>
+          <button class="tips-item" data-tip="sacrament">
+            Understanding the Sacrament
+          </button>
+          <button class="tips-item" data-tip="covenants">
+            Teaching About Covenants
+          </button>
+          <button class="tips-item" data-tip="holyghost">
+            Listening to the Holy Ghost (Cup Game)
+          </button>
+          <button class="tips-item" data-tip="hymns">
+            Learning Hymns with Joy
+          </button>
+          <button class="tips-item" data-tip="reverence">
+            Maintaining Reverence (Reverence Thermometer)
+          </button>
+          <button class="tips-item" data-tip="goals">
+            Personal Development Goals
+          </button>
+        </aside>
+
+        <!-- Panel de detalle con imagen -->
+        <article class="tips-detail">
+          <h3 id="tip-title">Teaching Children to Pray</h3>
+
+          <figure class="tip-figure">
+            <img
+              id="tip-image"
+              src="images/tip-prayer.jpg"
+              alt="Parent and child kneeling in prayer"
+              loading="lazy"
+            />
+          </figure>
+
+          <p id="tip-body">
+            Show children how to pray by using simple steps: address Heavenly Father, express gratitude,
+            ask for help, and close in Jesus Christ’s name. Practice together with short, joyful examples.
+            Invite children to choose one sentence to say on their own, building confidence and trust.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer igual que en las otras páginas -->
+  <footer class="site-footer">
+    <p>
+      &copy; <span id="current-year"></span> The Primary Treehouse &bull;
+      Created by Saori Domínguez
+    </p>
+    <p>Last Updated: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="scripts/project.js" defer></script>
+</body>
+</html>

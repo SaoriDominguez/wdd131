@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>References • The Primary Treehouse</title>
+
+  <!-- SAME CSS USED IN INDEX.HTML -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/project.css">
+
+  <!-- Google Fonts (if used in index.html) -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 🌳 SAME HEADER AS INDEX.HTML -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo-circle">🌳</div>
+        <div class="brand-text">
+          <h1>The Primary Treehouse</h1>
+          <p class="tagline">Tiny hands. True disciples.</p>
+        </div>
+      </div>
+
+      <nav>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="teaching-tips.html">Teaching Tips</a></li>
+          <li><a href="#share">Share an Idea</a></li>
+          <li><a href="references.html" class="active">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🌟 MAIN CONTENT -->
+  <main class="page-main references-page">
+
+    <h1 class="page-title">References</h1>
+    <p class="page-subtitle">
+      Sources and inspiration behind <strong>The Primary Treehouse</strong>.
+    </p>
+
+    <!-- SECTION 1 -->
+    <section class="ref-card">
+      <h2><span class="ref-number">1</span> Official Church Resources</h2>
+      <ul>
+        <li>The Book of Mormon, The Church of Jesus Christ of Latter-day Saints.</li>
+        <li>The Holy Bible.</li>
+        <li>
+          Children – Gospel Learning Resources:<br>
+          <a href="https://www.churchofjesuschrist.org/study/children">
+            https://www.churchofjesuschrist.org/study/children
+          </a>
+        </li>
+        <li>
+          Sharing the Gospel – Teaching Resources:<br>
+          <a href="https://www.churchofjesuschrist.org/study/sharing-the-gospel">
+            https://www.churchofjesuschrist.org/study/sharing-the-gospel
+          </a>
+        </li>
+        <li>
+          Children and Youth Program – Personal Development Goals:<br>
+          <a href="https://www.churchofjesuschrist.org/youth/childrenandyouth">
+            https://www.churchofjesuschrist.org/youth/childrenandyouth
+          </a>
+        </li>
+        <li>General Handbook — Serving in the Church (Primary Section).</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="ref-card">
+      <h2><span class="ref-number">2</span> Images & Illustrations</h2>
+      <ul>
+        <li>
+          “Jesus Loves Me – Circle Time”<br>
+          Image source: Bible Teaching Notes<br>
+          <a href="https://bibleteachingnotes.blog/2019/05/16/jesus-loves-me/">
+            https://bibleteachingnotes.blog/2019/05/16/jesus-loves-me/
+          </a>
+        </li>
+
+        <li>
+          “Armor of God Dress-Up”<br>
+          Image source: MormonBeliefs – Thoughts on the Armor of God<br>
+          <a href="https://mormonbeliefs.org/2011/07/19/thoughts-armor-god/">
+            https://mormonbeliefs.org/2011/07/19/thoughts-armor-god/
+          </a>
+        </li>
+
+        <li>
+          “Testimony Tree”<br>
+          Image source: DrawingsOf – Tree Drawing<br>
+          <a href="https://drawingsof.com/tree-drawing/">
+            https://drawingsof.com/tree-drawing/
+          </a>
+        </li>
+
+        <li>Additional icons from Flaticon.com (decorative elements).</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="ref-card">
+      <h2><span class="ref-number">3</span> Teaching Concepts & Activity Ideas</h2>
+      <ul>
+        <li>“Reverence Thermometer” — inspired by Primary tools.</li>
+        <li>“Song King” hymn learning game — adapted from traditional Primary singing games.</li>
+        <li>“Cup Telephone Game” — analogy for hearing the Holy Ghost.</li>
+        <li>
+          All additional teaching tips, ideas, and descriptions were created by 
+          <strong>Saori Domínguez</strong> for The Primary Treehouse.
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="ref-card">
+      <h2><span class="ref-number">4</span> Web Development Resources</h2>
+      <ul>
+        <li>WDD131 Course Materials — BYU–Idaho & BYU–Pathway.</li>
+        <li>MDN Web Docs (HTML, CSS, JavaScript Reference).</li>
+        <li>Google Fonts (Nunito, Quicksand).</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- 🌳 FOOTER (SAME AS INDEX) -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> The Primary Treehouse • Created by Saori Domínguez</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <!-- JS for menu + footer auto-update -->
+  <script src="scripts/main.js" defer></script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+
+</body>
+</html>

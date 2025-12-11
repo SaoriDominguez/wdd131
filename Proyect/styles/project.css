@@ -1,0 +1,211 @@
+/* -------- Teaching Tips layout -------- */
+
+.tips-wrapper {
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+  padding: 1rem 1.5rem 3rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+  gap: 1.5rem;
+  background: #f9fbff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+}
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tips-item {
+  border: none;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-family: inherit;
+  cursor: pointer;
+  background: #eef2ff;
+  color: #111827;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.tips-item:hover {
+  transform: translateY(-1px);
+}
+
+.tips-item.active {
+  background: #020617;
+  color: #ffffff;
+}
+
+.tips-detail {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem 1.75rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+}
+
+.tips-detail h3 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+
+/* Imagen dentro del panel */
+.tip-figure {
+  margin: 0 0 1rem;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.tip-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========= References page ========= */
+
+.references-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.page-header h1 {
+  margin-bottom: 0.4rem;
+}
+
+.page-tagline {
+  color: #6b7280;
+  font-size: 0.98rem;
+}
+
+.ref-section {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.6rem 1.5rem;
+  margin-bottom: 1.3rem;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+}
+
+.ref-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.15rem;
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+
+.ref-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--primary, #145b5d);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.ref-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ref-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.ref-list li:last-child {
+  margin-bottom: 0;
+}
+
+.ref-list a {
+  color: var(--accent, #0f766e);
+  word-break: break-all;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.ref-list a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* un poco de respiro en pantallas grandes */
+@media (min-width: 900px) {
+  .references-page {
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .ref-section {
+    padding: 1.8rem 2rem;
+  }
+}
+
+/* --- NUMBERED REFERENCE CARDS --- */
+.ref-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin: 1.8rem auto;
+  border-radius: 12px;
+  max-width: 850px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 6px solid #5da271; /* el verde treehouse */
+}
+
+.ref-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.ref-number {
+  background: #5da271;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.ref-card ul {
+  margin-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.ref-card ul li {
+  margin-bottom: 0.7rem;
+}

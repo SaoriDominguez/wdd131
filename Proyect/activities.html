@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Primary Treehouse – Activities Ideas</title>
+  <meta name="description" content="Activity ideas for children’s spiritual, social, physical, and intellectual growth." />
+  <meta name="author" content="Saori Dominguez" />
+
+  <!-- Google fonts and main styles (same as the rest of your site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- Your existing main.js for nav/footer, etc. -->
+  <script src="scripts/main.js" defer></script>
+  <!-- New file just for this wheel page -->
+  <script src="scripts/activities-wheel.js" defer></script>
+</head>
+<body>
+<div class="site-wrapper">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo-circle">🌳</div>
+        <div class="brand-text">
+          <h1>The Primary Treehouse</h1>
+          <p class="tagline">Tiny hands. True disciples.</p>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-toggle" aria-label="Open navigation menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="activities.html" class="active">Activities</a></li>
+          <li><a href="teaching-tips.html">Teaching Tips</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section activities-ideas">
+      <h2>Activities Ideas</h2>
+
+      <p class="scripture-line">
+        “Train up a child in the way he should go: and when he is old, he will not depart from it.”
+        <span class="scripture-ref">— Proverbs 22:6</span>
+      </p>
+
+      <!-- WHEEL LAYOUT -->
+      <div class="activities-grid">
+        <!-- center illustration (optional) -->
+        <div class="activities-wheel">
+          <!-- if you have a real image, swap src for your file name -->
+          <img src="images/activities-wheel.png"
+               alt="Children learning in spiritual, social, physical, and intellectual ways"
+               loading="lazy" />
+        </div>
+
+        <!-- SPIRITUAL -->
+        <section class="quad quad-spiritual">
+          <h3>Spiritual</h3>
+          <ul class="activity-list" data-area="spiritual">
+            <li><button type="button" data-id="little-missionaries">Little Missionaries</button></li>
+            <li><button type="button" data-id="sweet-memories">Sweet Memories</button></li>
+            <li><button type="button" data-id="christmas-choir">Christmas Choir</button></li>
+            <li><button type="button" data-id="plan-of-salvation">Plan of Salvation Challenge</button></li>
+            <li><button type="button" data-id="first-covenant">My First Covenant</button></li>
+          </ul>
+        </section>
+
+        <!-- SOCIAL (sample names – you can change later) -->
+        <section class="quad quad-social">
+          <h3>Social</h3>
+          <ul class="activity-list" data-area="social">
+            <li><button type="button" data-id="friendship-chain">Friendship Chain</button></li>
+            <li><button type="button" data-id="kindness-bingo">Kindness Bingo</button></li>
+            <li><button type="button" data-id="service-circle">Service Circle Time</button></li>
+          </ul>
+        </section>
+
+        <!-- PHYSICAL -->
+        <section class="quad quad-physical">
+          <h3>Physical</h3>
+          <ul class="activity-list" data-area="physical">
+            <li><button type="button" data-id="reverent-walk">Reverent Walk</button></li>
+            <li><button type="button" data-id="scripture-relay">Scripture Relay</button></li>
+            <li><button type="button" data-id="temple-stretches">Temple Stretches</button></li>
+          </ul>
+        </section>
+
+        <!-- INTELLECTUAL -->
+        <section class="quad quad-intellectual">
+          <h3>Intellectual</h3>
+          <ul class="activity-list" data-area="intellectual">
+            <li><button type="button" data-id="scripture-puzzle">Scripture Puzzle Hunt</button></li>
+            <li><button type="button" data-id="question-jar">Question Jar</button></li>
+            <li><button type="button" data-id="article-of-faith-memory">Articles of Faith Memory Game</button></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- DETAIL PANEL -->
+      <section class="activity-detail" aria-live="polite">
+        <h3 id="activity-detail-title">Choose an activity to see the plan</h3>
+        <p id="activity-detail-meta" class="detail-meta"></p>
+        <p id="activity-detail-body" class="detail-body"></p>
+        <ul id="activity-detail-steps" class="detail-steps"></ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> The Primary Treehouse · Saori Dominguez · Mexico</p>
+    <p>Last modified: <span id="last-modified"></span> · <a href="references.html">References</a></p>
+  </footer>
+</div>
+</body>
+</html>
